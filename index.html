@@ -27,38 +27,18 @@
     <script src="js/reno.js"></script>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-2 container-fluid fixed mySideBar">
-                <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="-1">
-                <div class="row jumbotron">
-                    <div class="col-md-12">
-
-                        HEAD
-                    </div>
-                </div>                
-					<li class="active"></li>
-                    <div class="row">
-                        <div class="col-md-12 scrollit">
-                            <paper-item class="item" href="#list1">Menu1</paper-item>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <paper-item class="item" href="#list2">Menu2</paper-item>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <paper-item class="item" href="#list3">Menu3</paper-item>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <paper-item class="item" href="#list4">Menu4</paper-item>
-                        </div>
-                    </div>
+            <!-- Side Bar -->
+            <div class="col-md-2 mySidebar scrollspy">
+                <ul class="nav nav-stacked affix" data-spy="affix" data-offset-top="0">
+                    <li><paper-item class="row">HEAD</paper-item></li>
+                    <li><paper-item class="row" href="#list1">Menu1</paper-item></li>
+                    <li><paper-item class="row" href="#list2">Menu2</paper-item></li>
+                    <li><paper-item class="row" href="#list3">Menu3</paper-item></li>
+                    <li><paper-item class="row" href="#list4">Menu4</paper-item></li>
                 </ul>
             </div>
-            <div class="col-md-10 container-fluid">
+            <!-- Content -->
+            <div class="col-md-10" data-spy="scroll" data-target=".scrollspy">
                 <div class="row">
                     <div id="list1" class="col-md-12 alfaBgCol">
                         List1
