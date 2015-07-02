@@ -8,8 +8,22 @@
 }
 
 .papBut{
-	padding: 10px;
+	max-width: 200px;
+	
 }
+
+@keyframes dropShadow {
+    from {box-shadow: 0px 0px 0px grey;}
+    to {box-shadow: 0px 0px 10px grey;}
+}
+
+.papBut:hover{
+
+	animation-name: dropShadow;
+    animation-duration: 2s;
+}
+
+
 
 .mySideBar{
     background-color: burlywood;
@@ -19,15 +33,12 @@
 
 .iSidebar{
     background-color: whitesmoke;
-    max-width: 200px;
-/*
-    margin: auto;
-    border: 3px solid #8AC007;
-*/
+    width: 150px;	
     height: 100%;
     padding: 20px;
     float: left;
     position: fixed;
+	left: 0px;
     box-shadow: 1px 2px 5px 1px;
     z-index: 1;
 }
